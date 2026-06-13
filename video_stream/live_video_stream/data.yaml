@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['benches', 'excavator', 'truck', 'wall']
+
+roboflow:
+  workspace: deepika-gxohk
+  project: mine_detect-2-uwx0i
+  version: 1
+  license: Private
+  url: https://app.roboflow.com/deepika-gxohk/mine_detect-2-uwx0i/1

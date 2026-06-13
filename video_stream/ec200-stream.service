@@ -1,0 +1,16 @@
+[Unit]
+Description=EC200 Cellular Live Stream
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=Hari
+WorkingDirectory=/home/Hari/project/project1
+ExecStart=/home/Hari/picam-venv/bin/python3 /home/Hari/project/project1/final3.py
+Restart=always
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=EC200 Modem Init AT Commands
+After=network.target usb.target
+Wants=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/ec200-init.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
